@@ -1,0 +1,180 @@
+body {
+  overflow-x: hidden;
+}
+/* navbar */
+.navbar {
+  text-transform: uppercase;
+}
+.navbar-brand img {
+  height: 68px;
+  max-width: 68px;
+  width: 100%;
+}
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  padding-top: 0.8rem;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}
+
+/* Landing page */
+.home-inner {
+  background-image: url(images/misc/pool.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 1121px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+}
+.caption,
+h1 h3 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Welcome */
+.welcome-inner {
+  background-image: url(images/misc/panel.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 1605px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.welcome-keycard-napkin {
+  width: 900px;
+}
+.welcome-card img {
+  width: 800px;
+  max-width: 100%;
+  z-index: 2;
+  display: block;
+  margin: -1950px auto 40px auto;
+}
+
+.welcome-text {
+  z-index: 3;
+  margin-top: -475px;
+  margin-bottom: 350px;
+}
+
+.keycard {
+  display: flex;
+  justify-content: flex-end;
+}
+.keycard img {
+  z-index: 1;
+  margin-right: -12px;
+  margin-top: 10px;
+}
+.napkin img {
+  margin-left: -75px;
+  margin-top: -240px;
+  z-index: -1;
+}
+
+/* About  */
+#about {
+  position: relative;
+}
+.about-inner {
+  background-image: url(images/misc/sitting-pool.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 1130px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.about-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 200px;
+}
+.about-card {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 34%;
+  z-index: 1;
+}
+
+/* Brand */
+#brand {
+  position: relative;
+}
+.brand-inner {
+  background: #00b595;
+  height: 600px;
+  width: 100vw;
+}
+
+.glasses-text img {
+  position: absolute;
+  bottom: -60px;
+  left: -125px;
+  z-index: 1;
+}
+.ensilo img {
+  position: absolute;
+  bottom: 265px;
+}
+
+/* Demo section */
+#demo {
+  position: relative;
+}
+.demo-inner {
+  background-image: url(images/misc/leaf.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 1130px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.demo-text {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 925px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: farewell angelina sample;
+}
+.demo-form {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 34%;
+  z-index: 1;
+}
+.demo-form label {
+  color: #fff;
+}
+.demo-button {
+  position: relative;
+  top: 75px;
+  left: 45%;
+}
+.gold-logo {
+  position: absolute;
+  left: 45%;
+  bottom: 275px;
+}
