@@ -192,7 +192,7 @@ body {
 
 .demo-text {
   position: absolute;
-  top: 150px;
+  top: 10%;
   left: 32%;
   text-align: center;
   text-transform: uppercase;
@@ -203,7 +203,7 @@ body {
   /* width: 100%;
   max-width: 100%; */
   position: absolute;
-  top: 305px;
+  top: 20%;
   left: 23%;
   right: 20%;
 }
