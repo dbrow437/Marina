@@ -17,7 +17,6 @@ body {
 /* navbar */
 .navbar {
   text-transform: uppercase;
-  /* position: fixed; */
 }
 .navbar-brand img {
   height: auto;
@@ -34,6 +33,9 @@ body {
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #00b595;
 }
+.fixed-top {
+  z-index: auto;
+}
 
 /* Landing page */
 .home-inner {
@@ -49,16 +51,15 @@ body {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 38%;
+  top: 35%;
   z-index: 1;
-}
-.caption,
-h1 h3 {
-  color: #fff;
-  text-transform: uppercase;
 }
 
 /* Welcome */
+#welcome .container {
+  padding-right: 0;
+  padding-left: 0;
+}
 .welcome-inner {
   background-image: url(images/misc/panel.jpg);
   background-size: cover;
@@ -75,6 +76,9 @@ h1 h3 {
   display: flex;
   justify-content: center;
 }
+/* .welcome-card {
+  width: 45rem;
+} */
 .welcome-card img {
   width: 100%;
   max-width: 100%;
@@ -138,6 +142,12 @@ h1 h3 {
 #brand {
   position: relative;
 }
+#brand .container-fluid {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
 .brand-inner {
   background: #00b595;
   height: 994px;
@@ -157,13 +167,18 @@ h1 h3 {
 
 /* Demo section */
 #demo {
-  position: relative;
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
   overflow-y: hidden;
 }
+#demo .container-fluid {
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .demo-inner {
   background-image: url(images/misc/leaf.jpg);
   background-size: cover;
@@ -172,35 +187,38 @@ h1 h3 {
   width: 100vw;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  z-index: -1;
 }
 
 .demo-text {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  bottom: 925px;
+  position: absolute;
+  top: 150px;
+  left: 32%;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
   font-family: farewell angelina sample;
 }
 .demo-form {
-  width: 100%;
-  max-width: 100%;
+  /* width: 100%;
+  max-width: 100%; */
   position: absolute;
-  top: 34%;
-  z-index: 1;
+  top: 305px;
+  left: 23%;
+  right: 20%;
 }
 .demo-form label {
   color: #fff;
 }
 .demo-button {
-  position: relative;
-  top: 75px;
-  left: 45%;
+  /* position: absolute;
+  top: 300px;
+  left: 40%; */
+  display: flex;
 }
 .gold-logo {
-  position: absolute;
-  left: 45%;
-  bottom: 275px;
+  /* position: absolute;
+  left: 40%;
+  top: 400px; */
+  display: flex;
 }
