@@ -1,12 +1,15 @@
 body {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 /* navbar */
 .navbar {
   text-transform: uppercase;
+  /* position: fixed; */
 }
 .navbar-brand img {
-  height: 68px;
+  height: auto;
   max-width: 68px;
   width: 100%;
 }
@@ -18,7 +21,7 @@ body {
   padding-top: 0.8rem;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #1ebba3;
+  color: #00b595;
 }
 
 /* Landing page */
@@ -55,14 +58,20 @@ h1 h3 {
   background-attachment: fixed;
 }
 .welcome-keycard-napkin {
-  width: 900px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 .welcome-card img {
-  width: 800px;
+  width: 100%;
   max-width: 100%;
+  height: auto;
   z-index: 2;
-  display: block;
-  margin: -1950px auto 40px auto;
+  display: flex;
+  justify-content: center;
+  margin-top: -1755px;
 }
 
 .welcome-text {
@@ -94,7 +103,7 @@ h1 h3 {
   background-image: url(images/misc/sitting-pool.jpg);
   background-size: cover;
   background-position: center;
-  height: 1130px;
+  height: 1360px;
   width: 100vw;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -119,7 +128,7 @@ h1 h3 {
 }
 .brand-inner {
   background: #00b595;
-  height: 600px;
+  height: 994px;
   width: 100vw;
 }
 
@@ -142,7 +151,7 @@ h1 h3 {
   background-image: url(images/misc/leaf.jpg);
   background-size: cover;
   background-position: center;
-  height: 1130px;
+  height: 1866px;
   width: 100vw;
   background-repeat: no-repeat;
   background-attachment: fixed;
