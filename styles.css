@@ -11,19 +11,29 @@ body {
   margin: 0;
   padding: 0;
 }
-#home {
-  position: relative;
+section#home {
+  height: 556px;
+  width: 100vw;
+  background-image: url(images/misc/pool.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* navbar */
 .navbar {
   text-transform: uppercase;
   font-family: gotham-medium;
   font-size: 14px;
+  background-color: transparent;
 }
 .navbar-brand img {
   height: auto;
-  max-width: 68px;
+  max-width: 50px;
   width: 100%;
+  margin-top: 15px;
 }
 .navbar-nav li {
   padding-right: 0.7rem;
@@ -39,139 +49,127 @@ body {
   z-index: auto;
 }
 
-/* Landing page */
-.home-inner {
-  background-image: url(images/misc/pool.jpg);
-  background-size: cover;
-  background-position: center top;
-  height: 1121px;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 .caption {
-  width: 100%;
+  /* width: 293px;
+  height: 127px; */
   max-width: 100%;
-  position: absolute;
-  top: 35%;
+  /* position: absolute;
+  top: 40%;
+  left: 30%; */
   z-index: 1;
 }
 
 /* Welcome */
-#welcome .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.welcome-inner {
+section#welcome {
   background-image: url(images/misc/panel.jpg);
   background-size: cover;
   background-position: center;
-  height: 1605px;
+  height: 1016px;
   width: 100vw;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-card img {
+  margin: -215px auto -50px auto;
+  z-index: 2;
 }
 .welcome-keycard-napkin {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
+  margin: -75px auto -150px auto;
 }
-/* .welcome-card {
-  width: 45rem;
-} */
-.welcome-card img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  margin-top: -1740px;
-  position: relative;
-}
-
-.welcome-text {
-  z-index: 3;
-  margin-top: -475px;
-  margin-bottom: 350px;
-}
-
-.keycard {
-  display: flex;
-  justify-content: flex-end;
-}
-.keycard img {
-  z-index: 1;
-  margin-right: -12px;
-  margin-top: 10px;
-}
-.napkin img {
-  margin-left: -75px;
-  margin-top: -240px;
-  z-index: -1;
+.welcome-keycard-napkin img {
+  height: 900px;
+  z-index: 5;
 }
 
 /* About  */
-#about {
-  position: relative;
-}
-.about-inner {
+section#get-started {
   background-image: url(images/misc/sitting-pool.jpg);
   background-size: cover;
   background-position: center;
-  height: 1360px;
+  height: 680px;
   width: 100vw;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .about-button {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  bottom: 200px;
   font-family: gotham-medium;
   font-size: 27px;
+  margin-bottom: 65px;
+  text-transform: uppercase;
+  font-weight: 100;
 }
-.about-card {
-  width: 100%;
-  max-width: 100%;
-  position: absolute;
-  top: 34%;
-  z-index: 1;
+.about-card img {
+  height: 365px;
 }
 
 /* Brand */
-/* #brand {
-  position: relative;
-} */
-#brand .container-fluid {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-}
-.brand-inner {
-  background: #00b595;
-  height: 994px;
-  width: 100vw;
-}
 
-.glasses-text img {
-  position: absolute;
-  bottom: -150px;
-  left: -125px;
-  z-index: 1;
+section#brand {
+  background: #00b595;
+  height: 497px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ensilo img {
-  position: absolute;
-  bottom: 300px;
+  height: 175px;
+}
+.glasses img {
+  height: 444px;
+  margin-top: 275px;
+  margin-left: -275px;
+}
+.glasses-text p {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Farewell Angelina Sample;
+  font-size: 18px;
+  text-align: right;
+  line-height: 2rem;
+  margin-right: 50px;
+  margin-left: -400px;
 }
 
 /* Demo section */
-#demo {
+
+section#demo {
+  background-image: url(images/misc/leaf.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 932px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo-text {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+.demo-form label {
+  color: #fff;
+  font-family: gotham-medium;
+  font-size: 14px;
+}
+.demo-form {
+  max-width: 640px;
+}
+.demo-button {
+  margin-top: 55px;
+  margin-bottom: 67px;
+}
+/* #demo {
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -206,14 +204,7 @@ body {
   font-family: farewell-angelina-sample;
   font-size: 37px;
 }
-.demo-form {
-  /* width: 100%;
-  max-width: 100%; */
-  position: absolute;
-  top: 20%;
-  left: 23%;
-  right: 20%;
-}
+
 .demo-form label {
   color: #fff;
   font-family: gotham-medium;
@@ -228,52 +219,14 @@ body {
   position: absolute;
   left: 40%;
   top: 70%;
-}
+} */
 
 /* media queries  */
 
-@media screen and (min-width: 880px) and (max-width: 1200px) {
-  .glasses-text img {
-    position: absolute;
-    bottom: -65px;
-    left: -125px;
-    z-index: 1;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .brand-inner {
-    height: 500px;
-  }
-  .glasses-text img {
-    bottom: -17px;
-    left: -50px;
-  }
-  .ensilo img {
-    bottom: 160px;
-    width: 65%;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .brand-inner {
-    height: 325px;
-  }
-  .glasses-text img {
-    bottom: -12px;
-    left: -15px;
-  }
-  .ensilo img {
-    bottom: 85px;
-    width: 65%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .brand-inner {
-    height: 225px;
-  }
-  .ensilo img {
-    bottom: 65px;
-    width: 65%;
+  .glasses-text p {
+    font-size: 16px;
+    line-height: 1rem;
+    margin: 50px 20px auto auto;
   }
 }

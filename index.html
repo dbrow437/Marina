@@ -13,7 +13,7 @@
     <title>The Marina</title>
   </head>
   <body>
-    <div id="home">
+    <section id="home">
       <div class="landing">
         <div class="home-wrap">
           <div class="home-inner">
@@ -25,9 +25,9 @@
       <!-- TODO: have nav items link to spots on the page about goes to section 3, contact goes to ? form goes to cta section -->
 
       <!-- Navigation -->
-      <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+      <nav class="navbar fixed-top  navbar-expand-md navbar-dark">
           <a class="navbar-brand" href="#">
-            <img src="images/svg/nav-logo.svg" alt="logo"></a>
+            <img src="images/svg/nav-logo.svg" alt="logo" width="50px" ></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -47,93 +47,70 @@
       </nav>
         <!-- end navigation -->
       <div class="caption text-center">
-        <img src="images/png/logo.png" class="img-fluid"/>
+        <img src="images/png/logo.png" class="img-fluid" width="293px" />
       </div>
-    </div>
+    </section>
 
 <!-- Welcome Section -->
-    <div id="welcome">
-      <div class="container-fluid">
-        <div class="landing">
-          <div class="welcome-wrap">
-            <div class="welcome-inner">
-            </div>
-          </div>
+    <section id="welcome">
+              <div class="welcome-card">
+          <img src="images/png/top-card.png" class="img-fluid" width="650px"  />
         </div>
 
-        <div class="welcome-card">
-          <img src="images/png/top-card.png" class="img-fluid" />
+        <div class="welcome-keycard-napkin">
+          <img src="images/misc/keycard-napkin.png" class="img-fluid" width="736px" />
         </div>
-
-        <div class="container-fluid welcome-keycard-napkin">
-          <img src="images/misc/keycard-napkin.png" class="img-fluid text-center" />
-          <!-- <div class="row welcome-section">
-            <div class="col-md-6 keycard">
-              <img src="images/png/keycard.png"/>
-            </div>
-            <div class="col-md-6 napkin">
-              <img src="images/png/napkin.png"/>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </div>
+    </section>
 
     <!-- About Section -->
-    <div id="about">
-      <div class="landing">
-        <div class="about-wrap">
-          <div class="about-inner">
-          </div>
-        </div>
-      </div>
-
-      <div class="about-card text-center">
+    <section id="get-started">
         <a name="about-section"></a>
-        <div class="row about-button">
+        <div class="about-button">
           <a href="#contact-form" class="btn btn-lg btn-outline-light">Get Started<a/>
         </div>
-        <img src="images/png/about-card.png" class="img-fluid" />
-      </div>
-    </div>
+        <div class= "about-card">
+          <img src="images/png/about-card.png" class="img-fluid" width="650px"/>
+        </div>
+    </section>
 
       <!-- Brand section -->
-      <div id="brand">
-        <div class="container-fluid">
-          <div class="landing">
-            <div class="brand-wrap">
-              <div class="brand-inner">
-              </div>
+    <section id="brand">
+
+        <!-- <div class="landing">
+          <div class="brand-wrap">
+            <div class="brand-inner">
             </div>
+          </div>
+        </div> -->
+
+          <div class="glasses d-none d-lg-block">
+            <img src="images/misc/glasses.png" class="img-fluid" width="700px"  />
+          </div>
+          <div class="glasses-text">
+          <p> Ensilo's Team of Endpoint Security<br />
+              experts will develop a highly<br />
+              personalized plan to stop even the <br />
+              most advanced cyber attacks. We're <br />
+              here to save you time and most <br />
+              importantly, Protect your business.
+          </p>
+          </div>
+          <div class="ensilo">
+            <img src="images/png/ensilo.png" class="img-fluid" width="277"/>
           </div>
 
-          <div class="row brand-sections">
-            <div class="col col-lg-8 glasses-text">
-              <img src="images/png/glasses-text.png" class="img-fluid"  />
-            </div>
-            <div class="col col-lg-4 ensilo">
-              <img src="images/png/ensilo.png" class="img-fluid"/>
-            </div>
-          </div>
-        </div>
-      </div>
+    </section>
 <!-- Schedule a Demo Section -->
-<div id="demo">
-  <a name="contact-form"></a>
-  <div class="container-fluid">
-    <div class="landing">
-      <div class="demo-wrap">
-        <div class="demo-inner">
-        </div>
+
+    <section id="demo">
+      <a name="contact-form"></a>
+
+      <div class="demo-text"><p>
+      That's why we have automated The Mundane Tasks of<br /> Cyber Security. Give us just 15 minutes for a demo. and<br /> we'll give you a $50 visa gift card.</p>
       </div>
-    </div>
-
-    <div class="demo-text"><p>
-      That's why we have automated The Mundane Tasks of<br /> Cyber Security. Give us just 15 minutes for a demo. and<br /> we'll give you a $50 visa gift card.</p></div>
 
 
-    <div class="demo-form">
-      <!-- <div class="container-fluid"> -->
+      <div class="demo-form">
         <form>
           <div class="row">
             <div class="col col-12">
@@ -157,15 +134,11 @@
               <input type="text" class="form-control">
             </div>
           </div>
-
         </form>
-        <button type="button" class="btn btn-outline-light demo-button">Schedule Demo</button>
-        <img src="images/svg/gold-logo.svg" class="gold-logo" width="134px" height="134px" />
-      <!-- </div> -->
-    </div>
-
       </div>
-  </div>
+      <button type="button" class="btn btn-outline-light demo-button">Schedule Demo</button>
+      <img src="images/svg/gold-logo.svg" class="gold-logo" width="67px" />
+    </section>
     <!-- TODO: on submit action -->
 
 
