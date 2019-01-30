@@ -61,9 +61,9 @@ section#home {
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #00b595;
 }
-.fixed-top {
-  top: 0;
-  z-index: auto;
+
+nav.scrolled {
+  :red!important ;
 }
 
 .caption {
@@ -191,7 +191,15 @@ section#demo {
   font-family: Gotham Medium;
 }
 
-/* Media Queries */
+/* Mobile */
+@media screen and (max-width: 425px) {
+  section#welcome {
+    height: 410px;
+  }
+  .welcome-card img {
+    margin: -399px auto -50px auto;
+  }
+}
 @media screen and (max-width: 768px) {
   section#brand {
     flex-direction: column-reverse;
@@ -202,6 +210,6 @@ section#demo {
     margin: 50px 20px auto auto;
   }
   .demo-form {
-    margin: 20px;
+    margin: 30px;
   }
 }
