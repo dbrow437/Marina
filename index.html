@@ -7,6 +7,12 @@
 
     <!-- bootstrap  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -14,16 +20,6 @@
   </head>
   <body>
     <section id="home">
-      <div class="landing">
-        <div class="home-wrap">
-          <div class="home-inner">
-          </div>
-        </div>
-      </div>
-
-      <!-- nav -->
-      <!-- TODO: have nav items link to spots on the page about goes to section 3, contact goes to ? form goes to cta section -->
-
       <!-- Navigation -->
       <nav class="navbar fixed-top  navbar-expand-md navbar-dark">
           <a class="navbar-brand" href="#">
@@ -37,7 +33,7 @@
                 <a class="nav-link" href="#about-section">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact-form">Contact</a>
+                <a class="nav-link" href="mailto:contact@ensilo.com">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact-form">Form</a>
@@ -45,30 +41,30 @@
             </ul>
           </div>
       </nav>
-        <!-- end navigation -->
+
       <div class="caption text-center">
-        <img src="images/png/logo.png" class="img-fluid" width="293px" />
+        <img src="images/png/resort.png" class="img-fluid" width="293px" />
       </div>
     </section>
 
 <!-- Welcome Section -->
     <section id="welcome">
-              <div class="welcome-card">
+              <div class="welcome-card" >
           <img src="images/png/top-card.png" class="img-fluid" width="650px"  />
         </div>
 
         <div class="welcome-keycard-napkin">
-          <img src="images/misc/keycard-napkin.png" class="img-fluid" width="736px" />
+          <img src="images/png/Asset.png" class="img-fluid" width="736px" />
         </div>
     </section>
 
     <!-- About Section -->
     <section id="get-started">
         <a name="about-section"></a>
-        <div class="about-button">
+        <div class="about-button revealOnScroll" data-animation="bounce">
           <a href="#contact-form" class="btn btn-lg btn-outline-light">Get Started<a/>
         </div>
-        <div class= "about-card">
+        <div class= "about-card revealOnScroll" data-animation="flipInX" >
           <img src="images/png/about-card.png" class="img-fluid" width="650px"/>
         </div>
     </section>
@@ -140,7 +136,12 @@
       <img src="images/svg/gold-logo.svg" class="gold-logo" width="67px" />
     </section>
 
-    <!-- jQuery -->
+    <script src="js/navScroll.js"></script>
+
+
+<script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+
+        <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
@@ -148,6 +149,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="functions/navScroll.js"></script>
+
+    <!-- JavaScript -->
+
+
+
+
   </body>
 </html>
