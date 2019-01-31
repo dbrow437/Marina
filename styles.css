@@ -208,7 +208,7 @@ section#demo {
   }
   .glasses-text p {
     font-size: 16px;
-    line-height: 1rem;
+    line-height: 2rem;
     margin: 50px 20px auto auto;
   }
   .demo-form {
@@ -225,5 +225,10 @@ section#demo {
   .glasses img {
     margin-left: -1100px;
     margin-right: 750px;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 990px) {
+  .glasses-text p {
+    margin-left: 0;
   }
 }
