@@ -21,10 +21,10 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   margin: 0;
   padding: 0;
 }
@@ -62,8 +62,10 @@ section#home {
   color: #00b595;
 }
 
-nav.scrolled {
-  :red!important ;
+.scrolled {
+  background-color: #00b595;
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
 .caption {

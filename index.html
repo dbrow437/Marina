@@ -11,8 +11,8 @@
     <!-- animate css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
 
-    <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -20,27 +20,29 @@
   </head>
   <body>
     <section id="home">
-      <!-- Navigation -->
-      <nav class="navbar fixed-top  navbar-expand-md navbar-dark">
-          <a class="navbar-brand" href="#">
-            <img src="images/svg/nav-logo.svg" alt="logo" width="50px" ></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#about-section">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="mailto:contact@ensilo.com">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact-form">Form</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
+      <header>
+        <!-- Navigation -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="#">
+              <img src="images/svg/nav-logo.svg" alt="logo" width="50px" ></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-section">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mailto:contact@ensilo.com">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact-form">Form</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+      </header>
 
       <div class="caption text-center">
         <img src="images/png/resort.png" class="img-fluid" width="293px" />
@@ -49,11 +51,11 @@
 
 <!-- Welcome Section -->
     <section id="welcome">
-              <div class="welcome-card" >
+              <div class="welcome-card">
           <img src="images/png/top-card.png" class="img-fluid" width="650px"  />
         </div>
 
-        <div class="welcome-keycard-napkin">
+        <div class="welcome-keycard-napkin" data-aos="fade-up-right">
           <img src="images/png/Asset.png" class="img-fluid" width="736px" />
         </div>
     </section>
@@ -61,10 +63,10 @@
     <!-- About Section -->
     <section id="get-started">
         <a name="about-section"></a>
-        <div class="about-button revealOnScroll" data-animation="bounce">
+        <div class="about-button">
           <a href="#contact-form" class="btn btn-lg btn-outline-light">Get Started<a/>
         </div>
-        <div class= "about-card revealOnScroll" data-animation="flipInX" >
+        <div class= "about-card" data-aos="fade-up-left" >
           <img src="images/png/about-card.png" class="img-fluid" width="650px"/>
         </div>
     </section>
@@ -82,7 +84,7 @@
           <div class="glasses d-none d-lg-block">
             <img src="images/misc/glasses.png" class="img-fluid" width="700px"  />
           </div>
-          <div class="glasses-text">
+          <div class="glasses-text" data-aos="fade-up">
           <p> Ensilo's Team of Endpoint Security<br />
               experts will develop a highly<br />
               personalized plan to stop even the <br />
@@ -101,7 +103,7 @@
     <section id="demo">
       <a name="contact-form"></a>
 
-      <div class="demo-text"><p>
+      <div class="demo-text" data-aos="zoom-in"><p>
       That's why we have automated The Mundane Tasks of<br /> Cyber Security. Give us just 15 minutes for a demo. and<br /> we'll give you a $50 visa gift card.</p>
       </div>
 
@@ -135,23 +137,19 @@
       <button type="button" class="btn btn-outline-light demo-button">Schedule Demo</button>
       <img src="images/svg/gold-logo.svg" class="gold-logo" width="67px" />
     </section>
-
-    <script src="js/navScroll.js"></script>
-
-
-<script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
-
         <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 
     <!-- bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
+    <!-- JavaScript -->
+    <script src="js/navScroll.js"></script>
 
 
 
