@@ -6,4 +6,4 @@ Buit with:
 Bootstrap
 AOS
 
-converted to wordpress website http://dslptest.wpengine.com/
+Converted to wordpress website http://dslptest.wpengine.com/
