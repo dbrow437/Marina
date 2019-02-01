@@ -2,8 +2,8 @@
 
 Built from Adobe Illustrator file
 
-Buit with:
-Bootstrap
+Buit with
+Bootstrap,
 AOS
 
-Converted to wordpress website http://dslptest.wpengine.com/
+Converted to WordPress website http://dslptest.wpengine.com/
